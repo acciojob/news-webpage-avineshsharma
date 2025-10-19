@@ -1,56 +1,56 @@
-body{
-	background-color:#f5f5f5;
-}
-.header{
-	color:white;
-	text-align:center;
-	background-color : #011e29;
-	padding:20px 0;
-	
-}
-.main{
-	display: flex;
-  justify-content: space-around;
-  padding: 0px 20px;
-  gap: 5px;
-}
-.box1{
-	display:flex;
-	text-align:centre;
-	background:white;
-	border-radius:10px;
-	height:150px
+body {
+    background-color: #f5f5f5;
 }
 
-.box{
-	 background: white;
-  flex: 1;
-  border-radius: 15px;
-  padding: 20px;
-  text-align: center;
+.header {
+    color: white;
+    text-align: center;
+    background-color: #011e29;
+    padding: 20px 0;
 }
 
+.main {
+    display: flex;
+    justify-content: space-around;
+    padding: 0px 20px;
+    gap: 5px;
+}
 
+.box1 {
+    display: flex;
+    flex-direction: column; /* Added for proper stacking */
+    text-align: left; /* Changed to left for better readability */
+    background: white;
+    border-radius: 10px;
+    height: 150px;
+    padding: 10px; /* Added padding for better spacing */
+}
+
+.box {
+    background: white;
+    flex: 1;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+}
 
 /* Headings */
 .box h2 {
-  margin-bottom: 15px;
+    margin-bottom: 15px;
 }
 
 /* Article list */
-.box ul {
-  list-style: disc;
-  text-align: left;
-  margin-left: 0px;
+.box1 ul {
+    list-style: disc;
+    margin-left: 20px; /* Added margin for better alignment */
 }
 
 /* Pictorial images */
 .pics img {
-  width: 100%;
-  border-radius: 10px;
-  margin-bottom: 15px;
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
 }
-
 
 
 
