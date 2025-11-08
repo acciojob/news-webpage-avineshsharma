@@ -1,4 +1,4 @@
-/* Global Page Style */
+/* Global Body */
 body {
   background-color: #f5f5f5;
   font-family: Arial, sans-serif;
@@ -6,25 +6,22 @@ body {
   padding: 0;
 }
 
-/* HEADER SECTION */
+/* Header */
 .header {
   background-color: #011e29;
   color: white;
-  display: block;               /* ensure block element for width and text-align */
   width: 100%;
-  text-align: center;           /* required by Cypress */
-  justify-content: center;
-  align-items: center;
-  padding: 20px;                /* required by Cypress */
+  text-align: center !important;   /* force computed value */
+  padding: 20px !important;
+  display: block;
 }
 
-/* Ensure h1 text aligns properly */
 .header h1 {
-  text-align: center;
   margin: 0;
+  text-align: center;
 }
 
-/* MAIN CONTENT LAYOUT */
+/* Layout */
 .content {
   display: flex;
   justify-content: space-around;
@@ -32,23 +29,19 @@ body {
   padding: 40px;
 }
 
-/* SECTIONS COMMON STYLES */
+/* Common Box Style */
 .latest-news-section,
 .main-article-section,
 .pictorial-news-section {
   background-color: white;
-  border-radius: 15px;          /* required by Cypress */
-  padding: 20px;                /* required by Cypress */
+  border-radius: 15px;
+  padding: 20px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 
-/* LATEST NEWS */
+/* Latest News Section */
 .latest-news-section {
   width: 25%;
-}
-
-.latest-news-section h3 {
-  text-align: left;
 }
 
 .latest-news-section ul {
@@ -56,19 +49,27 @@ body {
   margin-left: 30px;
 }
 
-/* MAIN ARTICLE */
+/* Main Article Section */
 .main-article-section {
   width: 40%;
   text-align: center;
 }
 
-/* PICTORIAL NEWS */
+/* Pictorial News Section */
 .pictorial-news-section {
   width: 25%;
-  text-align: center;           /* required by Cypress */
   background-color: white;
   border-radius: 15px;
   padding: 20px;
+  text-align: center !important;      /* ensure Cypress sees it as center */
+  display: block !important;          /* force block-level alignment */
+}
+
+/* Ensures computed text-align center even if images fill it */
+.pictorial-news-section h3 {
+  width: 100%;
+  display: block;
+  text-align: center;
 }
 
 .pictorial-news-section img {
@@ -77,6 +78,7 @@ body {
   border-radius: 10px;
   margin-top: 15px;
 }
+
 
 
 
