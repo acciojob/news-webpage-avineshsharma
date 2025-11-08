@@ -1,4 +1,4 @@
-/* Global Body */
+/* Global */
 body {
   background-color: #f5f5f5;
   font-family: Arial, sans-serif;
@@ -11,14 +11,7 @@ body {
   background-color: #011e29;
   color: white;
   width: 100%;
-  text-align: center !important;   /* force computed value */
-  padding: 20px !important;
-  display: block;
-}
-
-.header h1 {
-  margin: 0;
-  text-align: center;
+  padding: 20px;
 }
 
 /* Layout */
@@ -39,7 +32,7 @@ body {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 
-/* Latest News Section */
+/* Latest News */
 .latest-news-section {
   width: 25%;
 }
@@ -49,27 +42,18 @@ body {
   margin-left: 30px;
 }
 
-/* Main Article Section */
+/* Main Article */
 .main-article-section {
   width: 40%;
   text-align: center;
 }
 
-/* Pictorial News Section */
+/* Pictorial News */
 .pictorial-news-section {
   width: 25%;
-  background-color: white;
   border-radius: 15px;
   padding: 20px;
-  text-align: center !important;      /* ensure Cypress sees it as center */
-  display: block !important;          /* force block-level alignment */
-}
-
-/* Ensures computed text-align center even if images fill it */
-.pictorial-news-section h3 {
-  width: 100%;
-  display: block;
-  text-align: center;
+  background-color: white;
 }
 
 .pictorial-news-section img {
@@ -78,7 +62,6 @@ body {
   border-radius: 10px;
   margin-top: 15px;
 }
-
 
 
 
